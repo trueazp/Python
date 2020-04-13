@@ -36,6 +36,5 @@ for i in range(0, 5):
     values.append(int(input()))
 
 # print
-print("Rank 1 =", ranking(values)[0])
-print("Rank 2 =", ranking(values)[1])
-print("Rank 3 =", ranking(values)[2])
+for i in range(1, len(ranking(values)) + 1):
+    print("Rank", i, "=>", ranking(values)[i - 1])
