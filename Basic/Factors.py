@@ -14,3 +14,4 @@ num = int(input("Enter a number => "))
 
 # print
 print("Factor(s) of your number", factor(num))
+print("Total of", len(factor(num)), "factor(s)")
