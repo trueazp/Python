@@ -4,7 +4,7 @@
 # import
 import statistics
 
-# define function to find mode
+# function to find mode
 def mode(data):
     element = 0
     count = 0

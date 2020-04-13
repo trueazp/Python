@@ -4,7 +4,7 @@
 # import
 import sys
 
-# define function to find the first 3 largest number
+# function to find the first 3 largest number
 def ranking(values):
     # supporting variables
     min = -sys.maxsize - 1
