@@ -1,3 +1,6 @@
+# Nama : Akmal Zuhdy Prasetya
+# NIM : H071191035 
+
 # python program to print
 # mode of a list
 

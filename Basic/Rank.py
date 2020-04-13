@@ -1,3 +1,6 @@
+# Nama : Akmal Zuhdy Prasetya
+# NIM : H071191035 
+
 # python program to print
 # the first 3 largest numbers in a list
 
