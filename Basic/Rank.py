@@ -4,14 +4,13 @@
 # import
 import sys
 
-# define function
+# define function to find the first 3 largest number
 def ranking(values):
     # supporting variables
     min = -sys.maxsize - 1
     largest1 = min
     largest2 = min
     largest3 = min
-
     # sorting sequence
     for i in values[0:]:
         if i > largest1:
@@ -23,7 +22,6 @@ def ranking(values):
             largest2 = i
         elif i > largest3:
             largest3 = i
-    
     ranked = [largest1, largest2, largest3]
     return ranked
 
