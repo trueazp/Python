@@ -4,11 +4,7 @@
 # import
 import statistics
 
-# define function (shortcut)
-def mode_shortcut(data):
-    return statistics.mode(data)
-
-# define function (traditional)
+# define function to find mode
 def mode(data):
     element = 0
     count = 0
@@ -34,5 +30,4 @@ data = []
 for i in range(0, int(input("Input length => "))):
     data.append(int(input()))
 
-print("Modusnya adalah =>", mode_shortcut(data))
 print("Modusnya adalah =>", mode(data))
