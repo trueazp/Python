@@ -4,12 +4,9 @@
 # python program to print
 # mode of a list
 
-# import
-import statistics
-
 # function to find mode
 def mode(data):
-    element = 0
+    elesment = 0
     count = 0
     for i in data[0:]:
         temp_element = i
