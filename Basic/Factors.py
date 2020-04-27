@@ -1,6 +1,3 @@
-# Nama : Akmal Zuhdy Prasetya
-# NIM : H071191035 
-
 # python program to print
 # factor(s) of a number
 
