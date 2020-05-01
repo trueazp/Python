@@ -1,0 +1,11 @@
+{
+    "prettier.endOfLine": "auto",
+    "prettier.singleQuote": true,
+    "prettier.useTabs": true,
+    "editor.fontSize": 16,
+    "editor.tabSize": 2,
+    "editor.cursorBlinking": "smooth",
+    "editor.fontWeight": "bold",
+    "editor.cursorStyle": "block",
+    "python.pythonPath": "C:\\Users\\trueazp\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+}

@@ -19,7 +19,6 @@ class Employee:
 
 
 class Rectangle:
-
     def __init__ (self, length, width):
         self.length = length
         self.width = width
@@ -29,7 +28,6 @@ class Rectangle:
 
 
 class Strings:
-
     def getString(self, str):
         self.str = str
 
