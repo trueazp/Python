@@ -7,5 +7,12 @@
     "editor.cursorBlinking": "smooth",
     "editor.fontWeight": "bold",
     "editor.cursorStyle": "block",
-    "python.pythonPath": "C:\\Users\\WINDOWS 10\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+    "python.pythonPath": "C:\\Users\\WINDOWS 10\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "git.allowForcePush": true,
+    "git.autofetch": true,
+    "git.autoStash": true,
+    "git.enableCommitSigning": true,
+    "git.enableSmartCommit": true,
+    "git.fetchOnPull": true,
+    "git.ignoreMissingGitWarning": true
 }

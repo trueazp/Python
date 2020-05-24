@@ -6,7 +6,7 @@
 
 # function to find mode
 def mode(data):
-    elesment = 0
+    element = 0
     count = 0
     for i in data[0:]:
         temp_element = i
