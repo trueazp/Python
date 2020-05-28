@@ -1,7 +1,5 @@
 # file for lecturer's and advisor's object
 
-# from app.DataSource import DataBase
-
 class Lecturer:
   def setMahasiswaBimbingan(self):
     pass
@@ -17,7 +15,6 @@ class Advisor(Lecturer):
     self.noTelp = noTelp
     self.email = email
     self.mahasiswaBimbingan = []
-    # self.dataSource = DataBase()
 
   # getter
   def getId(self):

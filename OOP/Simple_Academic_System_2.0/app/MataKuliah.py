@@ -1,7 +1,5 @@
 # file for course's object
 
-from app.User import *
-
 class Course:
   # constructor
   def __init__(self, kodeMatkul, namaMatkul, dosenPengajar, sks, kuota):

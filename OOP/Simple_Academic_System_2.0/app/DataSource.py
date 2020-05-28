@@ -1,6 +1,7 @@
 # file for database activity
 # read and write from database
 # performed here
+
 from app.Dosen import Advisor
 from app.Mahasiswa import Student
 from app.User import UserMahasiswa, UserDosen
@@ -18,19 +19,14 @@ class DataBase:
     self.dosenPaMap = {}
     self.bimbinganDosen = []
 
-    # self.exDict = {}
-    # self.testing()
-
-    self.putDosen()
-    self.putMahasiswa()
-    self.putUserDosen()
-    self.putUserMahasiswa()
-    self.addBimbinganDosen()
-
-    # try:
-    #
-    # except:
-    #   print("Error in writing database")
+    try:
+      self.putDosen()
+      self.putMahasiswa()
+      self.putUserDosen()
+      self.putUserMahasiswa()
+      self.addBimbinganDosen()
+    except:
+      print("error in writing database...")
 
   # instansiasi
   @classmethod
@@ -38,25 +34,6 @@ class DataBase:
     if cls.dataSource == None:
       cls.dataSource = DataBase()
     return cls.dataSource
-
-  # # getter for testing
-  # def getUserMahasiswa(self, key):
-  #   return self.exDict.get(key)
-  #
-  # # testing
-  # def testing(self):
-  #   data = []
-  #   with open("D:\\Programming\\Python\\Simple_Academic_System_2.0\\database\\Mahasiswa.txt") as rf:
-  #     contents = rf.readlines()
-  #
-  #     for line in contents:
-  #       if not line in data:
-  #         data.append(line.split(";"))
-  #
-  #   for datum in data:
-  #     self.exDict.update({
-  #       datum[1] : Student(datum[0], datum[1], datum[2], "DosenPa")
-  #     })
 
   # getter
   def getUserMahasiswa(self, key):
@@ -85,7 +62,7 @@ class DataBase:
 
       for datum in data:
         self.userMapMahasiswa.update({
-          datum[1]: UserMahasiswa(datum[0], datum[1], datum[2], self.mahasiswaMap.get(datum[0]))
+          datum[1]: UserMahasiswa(datum[0], datum[1], datum[2].rstrip(), self.mahasiswaMap.get(datum[0]))
         })
 
   # baca tulis file untuk data user dosen pa
@@ -100,7 +77,7 @@ class DataBase:
 
       for datum in data:
         self.userMapDosen.update({
-          datum[1]: UserDosen(datum[0], datum[1], datum[2], self.dosenPaMap.get(datum[0]))
+          datum[1]: UserDosen(datum[0], datum[1], datum[2].rstrip(), self.dosenPaMap.get(datum[0]))
         })
 
   # baca tulis file untuk data mahasiswa
@@ -127,7 +104,7 @@ class DataBase:
 
     for datum in data:
       self.mahasiswaMap.update({
-        datum[0]: Student(datum[0], datum[1], datum[2], random.choice(names))
+        datum[0]: Student(datum[0], datum[1], datum[2].rstrip(), random.choice(names))
       })
 
   # baca tulis file untuk data dosen pembimbing
@@ -141,7 +118,7 @@ class DataBase:
 
       for datum in data:
         self.dosenPaMap.update({
-          datum[0]: Advisor(datum[0], datum[1], datum[2], datum[3])
+          datum[0]: Advisor(datum[0], datum[1].rstrip(), datum[2].rstrip(), datum[3].rstrip())
         })
 
   # baca tulis file untuk data bimbingan dosen

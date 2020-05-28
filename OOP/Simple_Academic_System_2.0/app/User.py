@@ -1,8 +1,6 @@
 # file for User's object
 
-from app.Mahasiswa import Student
 from app.Dosen import Advisor
-from app.MataKuliah import Course
 import random
 
 class Users:
@@ -115,7 +113,7 @@ class UserMahasiswa(Users):
         print("Nama mata kuliah\t:", matkul.getNamaMatkul())
         print("Kode mata kuliah\t:", matkul.getKodeMatkul())
         print("Dosen pengajar\t\t:", matkul.getDosenPengajar())
-        print("Jumlah satuan kredit\t:", matkul.getSks())
+        print("Jumlah satuan kredit:", matkul.getSks())
         print("-------------------------")
 
   # show IPS

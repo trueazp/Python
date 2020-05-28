@@ -2,24 +2,6 @@
 
 from app.System import Login
 from app.MataKuliah import Course
-from app.DataSource import DataBase
-
-# class Main:
-#   if __name__ == '__main__':
-#     login = Login.getInstance()
-#     matDas = Course("619", "Matematika Dasar", "Dosen Matematika", 3, 10)
-#
-#     print(login.dataSource.userMapMahasiswa)
-#     print(login.dataSource.userMapDosen)
-#     print(login.dataSource.mahasiswaMap)
-#     print(login.dataSource.dosenPaMap)
-#     print(login.dataSource.bimbinganDosen)
-#     print()
-#     print(login.dataSource.getDosenPa("6").getEmail())
-#     print(login.dataSource.getUserDosen("dosen666").getDosenPa().getEmail())
-#     print(login.dataSource.getMahasiswa("6").getEmail())
-#     print(login.dataSource.getUserMahasiswa("akmal").getMahasiswa().getNamaDosenPa())
-#     print(login.dataSource.getBimbinganDosen())
 
 class Main:
   if __name__ == '__main__':
