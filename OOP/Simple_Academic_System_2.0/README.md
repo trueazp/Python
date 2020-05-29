@@ -1,6 +1,6 @@
 # Python
 
-## Tema *Project* yang saya pilih
+## Tema *Project* berdasarkan tema project MidTest
   
 ### Academic System
 
