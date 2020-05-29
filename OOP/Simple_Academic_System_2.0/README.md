@@ -45,6 +45,8 @@
 
 - *BimbinganDosen.txt*, berperan sebagai database dari daftar mahasiswa bimbingan dari seorang dosen dengan format penulisan data adalah id;username_mahasiswa;...dst
 
+Masing-masing file dengan ekstensi .py berada di dalam folder *app* dan ekstensi .txt berada di dalam folder *database*, untuk UML Class Diagram project ini terdapat di dalam folder *diagram*
+
 ## Alur Kerja *Project*
 
 - Untuk melakukan simulasi project ini, silahkan jalankan langsung programnya
