@@ -21,17 +21,17 @@
 
 ### Dalam project ini terdapat 7 file dengan ekstensi .py dan 5 file dengan ekstensi .txt dengan penjelasan sebagai berikut
 
-- *Mahasiswa.py*, di dalamnya terdapat kelas Student yang memiliki data yang dapat dimiliki yang oleh mahasiswa seperti nama, alamat email, serta nama dosen pembimbingnya
+- *Mahasiswa.py*, di dalamnya terdapat kelas *Student* yang memiliki data yang dapat dimiliki yang oleh mahasiswa seperti nama, alamat email, serta nama dosen pembimbingnya
 
-- *Dosen.py*, di dalamnya terdapat kelas Lecturer yang memiliki method dengan body yang kosong, serta terdapat kelas Advisor yang mewarisi kelas Lecturer dan melakukan Override method kosong tersebut yang berfungsi untuk mendaftarkan mahasiswa bimbingannya serta menampilkan mahasiswa bimbingannya, serta memiliki data yang dapat dimiliki oleh dosen seperti nama, nomor telepon, alamat email, serta daftar mahasiswa bimbingannya
+- *Dosen.py*, di dalamnya terdapat kelas *Lecturer* yang memiliki method dengan body yang kosong, serta terdapat kelas *Advisor* yang mewarisi kelas *Lecturer* dan melakukan Override method kosong tersebut yang berfungsi untuk mendaftarkan mahasiswa bimbingannya serta menampilkan mahasiswa bimbingannya, serta memiliki data yang dapat dimiliki oleh dosen seperti nama, nomor telepon, alamat email, serta daftar mahasiswa bimbingannya
 
-- *MataKuliah.py*, di dalamnya terdapat kelas Course yang memiliki data yang dapat dimiliki oleh sebuah mata kuliah seperti kode mata kuliah, nama mata kuliah, nama dosenPengajar, jumlah sks, jumlah kuota yang tersedia, serta daftar mahasiswa yang terdaftar dalam mata kuliah tersebut
+- *MataKuliah.py*, di dalamnya terdapat kelas *Course* yang memiliki data yang dapat dimiliki oleh sebuah mata kuliah seperti kode mata kuliah, nama mata kuliah, nama dosenPengajar, jumlah sks, jumlah kuota yang tersedia, serta daftar mahasiswa yang terdaftar dalam mata kuliah tersebut
 
-- *User.py*, di dalamnya terdapat 3 kelas yaitu Users, UserMahasiswa, dan UserDosen. Kelas Users merupakan superclass yang diwariskan ke subclass UserMahasiswa dan UserDosen dimana kedua subclass ini merupakan kelas yang memiliki data yang dapat dimiliki oleh seorang user baik itu user mahasiswa maupun user dosen, dan masing - masing user dapat mengakses detail dari mahasiswa ataupun dosen tersebut
+- *User.py*, di dalamnya terdapat 3 kelas yaitu *Users*, *UserMahasiswa*, dan *UserDosen*. Kelas *Users* merupakan superclass yang diwariskan ke subclass *UserMahasiswa* dan *UserDosen* dimana kedua subclass ini merupakan kelas yang memiliki data yang dapat dimiliki oleh seorang user baik itu user mahasiswa maupun user dosen, dan masing - masing user dapat mengakses detail dari mahasiswa ataupun dosen tersebut
 
-- *DataSource.py*, di dalamnya terdapat kelas DataBase yang berfungsi sebagai tempat baca-tulis data berdasarkan database yang tersedia, database ini berisikan data - data dari mahasiswa, dosen, dan user. Data dari user (mahasiswa / dosen) berupa username dengan password telah tersimpan dalam database yang tersedia
+- *DataSource.py*, di dalamnya terdapat kelas *DataBase* yang berfungsi sebagai tempat baca-tulis data berdasarkan database yang tersedia, database ini berisikan data - data dari mahasiswa, dosen, dan user. Data dari user (mahasiswa / dosen) berupa username dengan password telah tersimpan dalam database yang tersedia
 
-- *System.py*, di dalamnya terdapat kelas Login yang berfungsi untuk melakukan segala hal yang dapat dilakukan oleh user ketika telah berhasil masuk ke dalam akunnya, terdapat behavior untuk melakukan verifikasi username dengan password untuk setiap user, menampilkan profil atau detail dari user, serta keluar dari akun
+- *System.py*, di dalamnya terdapat kelas *Login* yang berfungsi untuk melakukan segala hal yang dapat dilakukan oleh user ketika telah berhasil masuk ke dalam akunnya, terdapat behavior untuk melakukan verifikasi username dengan password untuk setiap user, menampilkan profil atau detail dari user, serta keluar dari akun
 
 - *Main.py*, di dalamnya terdapat kelas Main yang berfungsi untuk menjalankan simulasi program ini
 
@@ -156,17 +156,17 @@ Diterapkan juga hampir pada semua kelas, utamanya adalah pembuatan *getter* pada
 
 ### Inheritance
 
-Diterapkan pada *interface* *Dosen* ke kelas *DosenPa* yaitu mewariskan method *abstract* didalamnya
+Diterapkan pada kelas *Lecturer* ke kelas *Advisor* yaitu mewariskan method kosong atau tidak memiliki body atau *abstract* didalamnya
 
 ### Abstract & Interface
 
-Diterapkan pada *interface Dosen* yang memiliki method *abstract* di dalamnya yang kemudian di*implements* ke kelas *DosenPa* dan pada kelas *DosenPa* melakukan *Override* pada setiap method dalam *interface Dosen* sebagai bentuk keharusan
+Diterapkan pada kelas *Users*, *UserMahasiswa*, dan *UserDosen* dimana kelas *Users* merupakan superclass yang mewariskan attribut dan methodnya ke kedua subclassnya
 
 ### Polymorphism
 
-Tidak diterapkan karena masih kebingungan ingin diaplikasikan pada bagian apa di program
+Diterapkan pada kelas Login yang mengambil instance dari kelas *DataBase* sehingga kelas *Login* dapat menjadi objek dari kelas *Login* itu sendiri ataupun dapat menjadi objek dari kelas *DataBase* sehingga memiliki banyak bentuk
 
 ## Hal yang ingin diperbaiki kedepannya tentang program ini
 
 - Lebih baik dalam hal "mempersingkat kode" untuk menjadikan program lebih efisien
-- Lebih banyak lagi menerapkan konep *Object Oriented Programming* dalam program ini
+- Lebih banyak lagi menerapkan konsep *Object Oriented Programming* dalam program ini
